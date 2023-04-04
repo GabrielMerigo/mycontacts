@@ -24,8 +24,8 @@ class ContactsRepository {
 
   findById(id) {
     return new Promise((resolve) => {
-      contacts.find((contact) => contact.id === id);
-      resolve(contacts);
+      const contact = contacts.find((contact) => contact.id === id);
+      resolve(contact);
     });
   }
 
